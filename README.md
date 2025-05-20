@@ -73,3 +73,12 @@ You can download from the appstore if you use an iPhone, iPad or a Mac with Sili
 <a href="https://github.com/JideGuru/FlutterEbookApp">
         <img width="500" alt="Star History Chart" src="https://api.star-history.com/svg?repos=JideGuru/FlutterEbookApp&type=Date">
       </a>
+
+## FastAPI Backend Integration
+
+This project can interact with a FastAPI backend. The example backend used during development is [fastapi-realworld-example-app](https://github.com/nsidnev/fastapi-realworld-example-app).
+
+1. Clone the backend repository outside this project and install its dependencies.
+2. Run the server locally using `uvicorn app.main:app --reload`.
+3. Ensure the base URL in `lib/src/common/constants/api.dart` matches the server address (default is `http://localhost:8000`).
+4. Start the Flutter application. The new "My Books" section in Settings demonstrates fetching data from FastAPI.

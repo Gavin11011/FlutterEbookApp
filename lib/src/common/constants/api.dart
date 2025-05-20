@@ -1,12 +1,17 @@
-const String baseURL = 'https://catalog.feedbooks.com';
-const String publicDomainURL = '/publicdomain/browse';
-const String popular = '$publicDomainURL/top.atom';
-const String recent = '$publicDomainURL/recent.atom';
-const String awards = '$publicDomainURL/awards.atom';
-const String noteworthy = '$publicDomainURL/homepage_selection.atom';
-const String shortStory = '$publicDomainURL/top.atom?cat=FBFIC029000';
-const String sciFi = '$publicDomainURL/top.atom?cat=FBFIC028000';
-const String actionAdventure = '$publicDomainURL/top.atom?cat=FBFIC002000';
-const String mystery = '$publicDomainURL/top.atom?cat=FBFIC022000';
-const String romance = '$publicDomainURL/top.atom?cat=FBFIC027000';
-const String horror = '$publicDomainURL/top.atom?cat=FBFIC015000';
+// Base URL for the FastAPI backend. Update this if the server location changes.
+const String baseURL = 'http://localhost:8000';
+
+// Endpoints served by the FastAPI application. These replace the previous
+// Feedbooks URLs and return JSON data instead of Atom feeds.
+const String popular = '/api/books/popular';
+const String recent = '/api/books/recent';
+
+// Additional category endpoints that can be implemented on the backend.
+const String awards = '/api/books/awards';
+const String noteworthy = '/api/books/noteworthy';
+const String shortStory = '/api/books/genre/short-story';
+const String sciFi = '/api/books/genre/science-fiction';
+const String actionAdventure = '/api/books/genre/action-adventure';
+const String mystery = '/api/books/genre/mystery';
+const String romance = '/api/books/genre/romance';
+const String horror = '/api/books/genre/horror';

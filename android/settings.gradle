@@ -1,3 +1,5 @@
+import org.gradle.api.GradleException
+
 pluginManagement {
     def localPropertiesFile = new File(settingsDir, 'local.properties')
     def properties = new Properties()

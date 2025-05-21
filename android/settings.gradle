@@ -1,4 +1,6 @@
 
+import java.io.FileNotFoundException
+
 pluginManagement {
     def localPropertiesFile = new File(settingsDir, 'local.properties')
     def properties = new Properties()
@@ -7,7 +9,7 @@ pluginManagement {
     }
     def flutterSdkPath = properties.getProperty('flutter.sdk')
     if (flutterSdkPath == null) {
-        throw new GradleException('flutter.sdk not set in local.properties')
+        throw new FileNotFoundException('flutter.sdk not set in local.properties')
     }
 
     includeBuild("${flutterSdkPath}/packages/flutter_tools/gradle")

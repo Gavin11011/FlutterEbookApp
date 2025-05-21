@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart' hide SelectionListener;
+import 'package:flutter/widgets.dart' hide SelectionListener;
 import 'package:mno_navigator/epub.dart';
 import 'package:mno_navigator/publication.dart';
 

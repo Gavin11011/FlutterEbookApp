@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:archive/archive.dart' as a;
+import 'package:mno_shared/src/zip/zip_header.dart';
 import 'package:mno_shared/src/zip/file_buffer.dart';
 import 'package:mno_shared/src/zip/lazy_archive.dart';
 import 'package:mno_shared/src/zip/lazy_archive_file.dart';
@@ -23,7 +24,7 @@ class LazyZipDecoder {
 
         // The attributes are stored in base 8
         final mode = zfh.externalFileAttributes;
-        final compress = zf.compressionMethod != a.ZipFile.STORE;
+        final compress = zf.compressionMethod != ZipHeader.stored;
 
         LazyArchiveFile file = LazyArchiveFile(
             zfh, zf.filename, zf.uncompressedSize, zf.compressionMethod);

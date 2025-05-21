@@ -1,4 +1,3 @@
-import org.gradle.api.GradleException
 
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
@@ -8,7 +7,6 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-import org.gradle.api.GradleException
 
 def flutterRoot = localProperties.getProperty('flutter.sdk')
 if (flutterRoot == null) {

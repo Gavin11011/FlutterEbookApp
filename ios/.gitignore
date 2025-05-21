@@ -8,6 +8,7 @@
 .tags*
 **/.vagrant/
 **/DerivedData/
+**/Flutter/ephemeral/
 Icon?
 **/Pods/
 **/.symlinks/

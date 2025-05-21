@@ -24,8 +24,8 @@ You can download from the appstore if you use an iPhone, iPad or a Mac with Sili
 - Any Operating System (ie. MacOS X, Linux, Windows)
 - Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
 - A little knowledge of Dart and Flutter
-- Use JDK 11 or JDK 17 (Gradle 7.5 does not work with Java 21)
-- Run builds using the provided Gradle wrapper (Gradle 7.5)
+- Use JDK 17 with Gradle 8.2
+- Run builds using the provided Gradle wrapper (Gradle 8.2)
 
 ## ✨ Features
 

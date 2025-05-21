@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'dev.flutter.flutter-gradle-plugin'
 }
+import org.gradle.api.GradleException
 
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
